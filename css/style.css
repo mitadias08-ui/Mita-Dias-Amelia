@@ -10019,4 +10019,44 @@ textarea.form-control {
   opacity: 1 !important;
   visibility: visible !important;
 }
-  
+ /* ======== RESPONSIVE FIX MOBILE ======== */
+
+/* Sembunyikan topbar agar tampilan lebih bersih di HP */
+@media (max-width: 576px) {
+  .bg-primary {
+    display: none !important;
+  }
+}
+
+/* Perbaiki slider supaya tidak terlalu zoom dan tidak kepotong */
+@media (max-width: 768px) {
+  #home-section .slider-item {
+    height: 60vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  #home-section .slider-text h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+
+  #home-section .slider-text h2 {
+    font-size: 16px !important;
+  }
+}
+
+/* Navbar biar tidak nutup slider */
+@media (max-width: 768px) {
+  .ftco_navbar {
+    position: relative !important;
+    background: #000 !important;
+  }
+}
+
+/* Perbaiki spacing agar tidak kepanjangan di HP */
+@media (max-width: 768px) {
+  .ftco-section {
+    padding: 3em 0 !important;
+  }
+} 
